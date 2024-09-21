@@ -1,0 +1,361 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* #shop{
+
+width: 130px;
+height: 45px;
+border-radius: 0%;
+}
+#mar{
+  color: red;
+}
+.flex{
+gap: 50PX;
+}
+.text{
+font-size: xx-large;
+margin-top: 20px;
+font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+color: black;
+
+}
+ #btn{
+display: flex;
+justify-content: space-around;
+
+} 
+.sa {
+  position: relative;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-top: 18px;
+  width: 150px;
+  overflow: hidden;
+  transition: color 0.8s ease-in-out;
+}
+
+.sa::before {
+  content: "SHOP  NOW";
+  font-size: x-large;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: white;
+   z-index: 1; 
+  transition: width 0.8s ease-in-out;
+}
+
+.sa:hover::before {
+  width: 100%;
+}
+
+.sa:hover {
+  color: black;
+}
+
+.sa span {
+  position: relative;
+  z-index: 1; 
+  color: black;
+}
+hr{
+
+  position: relative;
+  top: 100px;
+
+}
+#h1r{
+
+position: relative;
+top: 200px;
+font-size: xxx-large;
+font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+color: black;
+}
+.container2{
+  position: relative;
+  top: 290px;
+left: 20px;
+}
+#hr2{
+  position: relative;
+  top: 370px;
+}
+.tex{
+  position: relative;
+  top: 390px;
+  font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-size: xxx-large;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+video{
+  position: relative;
+  top: 400px;
+  height: 500px;
+  width: 450px;
+  left: 10px;
+}
+.te{
+  border: 1px solid black;
+  /* padding: 10px; */
+  /* background-color: black;
+  color: white;
+  /* margin-top: 18px; */
+  
+/* .sam{
+  /* position: relative; */
+  /* top: 400px; */
+  /* margin-top: 50px; */
+#textt{
+  font-size: x-large;
+}
+#fom{
+display: flex;
+justify-content: center;
+/* position: relative; */
+/* top: 450px; */
+gap: 10px;
+}
+input{
+  width: 270px;
+  border: 1px solid black;
+}
+#btn1 {
+  position: relative;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  width: 270px;
+  overflow: hidden;
+}
+#btn1:hover {
+  color: black; 
+}
+#btn1::before {
+  content: " SUBSCRIBE ";
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: white;
+ transition: width 0.8s ease-in-out;
+}
+#btn1:hover::before {
+  width: 100%;
+}
+.textt{
+position: relative;
+/* top: 500px; */
+} 
+.s{
+  font-family:  var(--text-font-style) var(--text-font-weight) var(--text-base) / 1.65 var(--text-font-family);
+}
+#hr3{
+position: relative;
+top: 100px;
+}
+.footer {
+  position: relative;
+  /* top: 620px; */
+  display: flex;
+  /* justify-content: space-between; */
+   /* background-color: #f5f5f5;  */
+}
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-section li:hover {
+  color: #000;
+  cursor: pointer;
+}  */
+
+
+.top-banner{
+  border: 1px solid black;
+transform: translate(90deg);
+}
+ 
+.top-banner {
+  background-color: black;
+  color: white;
+  position: relative;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-size: small;
+  font-weight:lighter;
+} 
+
+.top-banner h4, .top-banner h5 {
+  position: absolute;
+  opacity: 0;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+
+/* Animation for h4 */
+.top-banner h4 {
+  animation-name: showAndHideH4;
+  animation-duration: 3s; /* Total animation time */
+  animation-delay: 0s; /* h4 starts immediately */
+}
+
+/* Animation for h5 */
+.top-banner h5 {
+  animation-name: showAndHideH5;
+  animation-duration: 3s; /* Total animation time */
+  animation-delay: 3s; /* h5 starts right after h4 completes */
+}
+
+@keyframes showAndHideH4 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1; /* h4 fades in */
+  }
+  40% {
+    opacity: 1; /* h4 stays visible */
+  }
+  50% {
+    opacity: 0; /* h4 fades out */
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showAndHideH5 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0; /* h5 remains hidden until h4 fades out */
+  }
+  60% {
+    opacity: 1; /* h5 fades in */
+  }
+  90% {
+    opacity: 1; /* h5 stays visible */
+  }
+  100% {
+    opacity: 0; /* h5 fades out */
+  }
+}
+
+.font{
+  font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  /* font-size: xx-large; */
+}
+ .btn {
+  border: 1px solid black;
+  padding: 5px 10px;
+  color: white;
+  background-color: black;
+  font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  border-radius: 0%;
+  height: 35px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+} 
+
+.btn:hover {
+  border: 1px solid black;
+  color: black;
+  font-size: large;
+
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: width 0.8s ease-in-out;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+.T{
+  border: 1px solid black;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
